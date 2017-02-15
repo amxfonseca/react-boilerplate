@@ -3,11 +3,11 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: [
-        './src'
+        __dirname + '/src/index.js'
     ],
     output: {
-        path: './dist',
         filename: 'bundle.js',
+        path:  __dirname + '/dist',
     },
     module: {
         loaders: [
@@ -22,11 +22,14 @@ module.exports = {
             {
                 test: /\.css$/,
                 loaders: [
-                'style',
-                'css?importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
-                'postcss'
+                'style-loader',
+                'css-loader?importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+                'postcss-loader'
                 ]
             }
         ]
-    }
+    },
+    plugins: [
+        require('postcss-cssnext')
+    ]
 }
