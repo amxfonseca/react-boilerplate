@@ -11,10 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "css-loader": "^0.26.1",
     "postcss": "^5.2.13",
     "postcss-cssnext": "^2.9.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "style-loader": "^0.13.1"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
