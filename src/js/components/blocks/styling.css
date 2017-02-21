@@ -1,0 +1,5 @@
+@import "./style.css";
+
+:local(.testTwo) {
+  @apply --alert;
+}
