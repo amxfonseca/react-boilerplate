@@ -17,14 +17,14 @@
   display: flex;
   background-color: var(--color);
 
-  & :hover {
-    color: var(--pink);
-  }
   @media (--large) {
     background-color: var(--yellow);
   }
 }
 
 
-
-
+:local(p) {
+  &:hover {
+    color: pink;
+  }
+}

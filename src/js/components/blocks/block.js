@@ -2,7 +2,9 @@ import React from 'react'
 
 function Block() {
   return(
-    <p>lkewnfe</p>
+    <div>
+      <p>I come from a different file</p>
+    </div>
   )
 }
 

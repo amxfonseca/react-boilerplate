@@ -8,11 +8,12 @@ class test extends React.Component {
         return (
           <div>
             <div className={Style.test}>
-               Hello world!
-               <p>hello back</p>
+               I'm auto-prefixed and have nested custom media queries
+               <p>I'm a paragraph with a nested hover</p>
+               <div>Hello</div>
             </div>
             <Block/>
-            <div className={Styling.testTwo}>kwehjfbewk</div>
+            <div className={Styling.testTwo}>I have an imported variable!</div>
           </div>
         )
     }
