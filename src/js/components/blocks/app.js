@@ -13,6 +13,7 @@ class test extends React.Component {
                <div>Hello</div>
             </div>
             <Block/>
+
             <div className={Styling.testTwo}>I have an imported variable!</div>
           </div>
         )
