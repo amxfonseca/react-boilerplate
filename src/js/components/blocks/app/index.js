@@ -1,5 +1,4 @@
 import React from 'react'
-import Block from './block.js'
 import Style from './style.css'
 import Styling from './styling.css'
 
