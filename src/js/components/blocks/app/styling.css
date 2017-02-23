@@ -1,0 +1,7 @@
+@import "./style.css";
+@import "../../../style/variables/colors.css";
+
+:local(.testTwo) {
+  @apply --alert;
+  color: var(--color-primary);
+}
