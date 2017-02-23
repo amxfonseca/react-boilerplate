@@ -1,12 +1,12 @@
 import React from 'react' 
 
 function App(props) {
-  const childrenWithProps = props
+  const { children } = props
 
   return(
     <div>
       <div>oegaboega</div>
-      {childrenWithProps}
+      {children}
     </div>
   )
 }

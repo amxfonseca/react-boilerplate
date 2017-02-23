@@ -12,7 +12,6 @@ class test extends React.Component {
                <p>I'm a paragraph with a nested hover</p>
                <div>Hello</div>
             </div>
-            <Block/>
 
             <div className={Styling.testTwo}>I have an imported variable!</div>
           </div>
