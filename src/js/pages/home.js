@@ -1,9 +1,10 @@
 import React from 'react'
 import Block from '../components/blocks/block'
-function Home() {
+
+const Home = () => {
   return(
     <div>
-      <p>This is the homepage</p>
+      <h1>This is the homepage</h1>
       <Block/>
     </div>
 
