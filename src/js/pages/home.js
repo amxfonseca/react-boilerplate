@@ -1,6 +1,7 @@
 import React from 'react'
 import Block from '../components/blocks/block'
 
+
 const Home = () => {
   return(
     <div>
