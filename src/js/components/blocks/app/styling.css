@@ -1,7 +1,11 @@
 @import "./style.css";
-@import "../../../../style/variables/colors.css";
+@import "../../../../style/variables/variables";
+
 
 :local(.testTwo) {
-  @apply --alert;
   color: var(--color-primary);
+  @media (--large-up) {
+    background-color: green;
+  }
+  
 }
