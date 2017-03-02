@@ -6,6 +6,7 @@
   --color: red;
   --yellow: yellow;
   --pink: pink;
+  --spacing-medium: 15px;
   --alert: {
     padding: 15px;
     color: pink;
@@ -17,12 +18,15 @@
 :local(.test) {
   display: flex;
   background-color: var(--color);
-
+  
   @media (--large) {
     background-color: var(--yellow);
   }
 }
 
+:local(.testActive) {
+  background-color: var(--pink)
+}
 
 :local(p) {
   &:hover {

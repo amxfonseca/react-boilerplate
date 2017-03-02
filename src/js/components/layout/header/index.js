@@ -1,10 +1,10 @@
 import React from 'react'
 import Style from './style.css'
 
-const Header = () => {
+function Header() {
   return(
-    <h2>This is the Header</h2>
+    <h2>Header</h2>
   )
-} 
+}
 
 export default Header

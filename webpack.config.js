@@ -4,10 +4,13 @@ var DIST_DIR = path.resolve(__dirname, "dist")
 var SRC_DIR = path.resolve(__dirname, "src")
 
 module.exports = {
-  entry:
-     SRC_DIR + '/index.js',
+  entry: [
+    'webpack/hot/dev-server',
+    'webpack-hot-middleware/client',
+    SRC_DIR
+  ],
   output: {
-    path: DIST_DIR + '/',
+    path: '/',
     filename: 'bundle.js',
     publicpath: '/'
   },
@@ -19,17 +22,21 @@ module.exports = {
             loader: 'babel-loader',
             exclude: /node_modules/,
             query: {
-                presets: ['es2015', 'react']
+                presets: ['es2015', 'react'],
             }
           },
           {
             test: /\.css$/,
             loaders: [
               'style-loader',
-              'css-loader?importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+              'css-loader?importLoaders=1&localIdentName=[local]___[hash:base64:5]',
               'postcss-loader'
             ]
           }
       ]
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
 }

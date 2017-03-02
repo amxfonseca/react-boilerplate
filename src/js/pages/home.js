@@ -2,13 +2,13 @@ import React from 'react'
 import Block from '../components/blocks/block'
 
 
-const Home = () => {
+const Home = prop => {
+
   return(
     <div>
-      <h1>This is the homepage</h1>
       <Block/>
+      <div>ewfjnlwenfkje</div>
     </div>
-
   )
 }
 
