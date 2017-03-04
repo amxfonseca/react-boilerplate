@@ -10,7 +10,7 @@ app.use(require('./middleware'))
 
 
 app.get('*', function (request, response){
-    response.sendFile(path.resolve(__dirname, '../src', 'index.html'))
+    response.sendFile(path.resolve(__dirname, './views', 'index.html'))
 })
 
 
