@@ -6,13 +6,12 @@ import './style/main.css'
 
 
 ReactDOM.render(
-    <Routes/>,
-    document.getElementById('root')
+  <Routes/>,
+  document.getElementById('root')
 )
 
 if (module.hot) {
-    module.hot.accept(Routes, () => {
-        const NewApp = require('./js/routing/routes')
-        render(<NewApp />, document.getElementById('root'));
-    })
+  module.hot.accept(Routes, () => {
+    render(<Routes />, document.getElementById('root'));
+  })
 }

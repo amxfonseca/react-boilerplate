@@ -11,7 +11,6 @@ function Routes() {
       <Route path="/" component={App}>
         <IndexRoute component={Home}/>
         <Route path="/appie" component={Appie}/>
-        <Route path="/home" component={Home}/>
       </Route>
     </Router>
   )

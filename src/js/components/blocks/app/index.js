@@ -7,7 +7,8 @@ class test extends React.Component {
   constructor() {
     super()
     this.state = {
-      active: false
+      active: false,
+      currentNumber: 0
     }
   }
 
@@ -17,14 +18,20 @@ class test extends React.Component {
     this.setState({ active: !active})
   }
 
+  plusONe() {
+    const { currentNumber } = this.state
+
+    this.setState({ currentNumber: currentNumber + 1 })
+  }
+
   render() {
-    const { active} = this.state
+    const { currentNumber, active } = this.state
     const activeClass = active ? Style.testActive : ""
 
     return (
       <div>
         <div className={`${Style.wrapper} ${activeClass}`}>
-          <div onClick={this.toggleActive.bind(this)}>ekjfnejk</div>
+          <div onClick={this.plusONe.bind(this)}>{currentNumber}</div>
         </div>
         <div className={Style.testing}></div>
       </div>
