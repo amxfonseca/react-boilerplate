@@ -19,7 +19,6 @@ app.use(require('./middleware'))
 //The folder to host static files
 app.use(express.static(path.join(__dirname, 'static')))
 
-
 app.get('*', (request, response) => {
   match({ routes, location: request.url }, (err, redirectLocation, renderProps) => {
     console.log(err, redirectLocation) 
