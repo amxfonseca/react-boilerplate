@@ -1,13 +1,13 @@
 import React from 'react'
-import Block from '../components/blocks/block'
+import App from '../components/blocks/app'
 
 
-const Home = prop => {
+const Home = () => {
 
   return(
     <div>
-      <Block/>
-      <div>ewfjnlwenfkje</div>
+      <App/>
+      ewfjnlw
     </div>
   )
 }

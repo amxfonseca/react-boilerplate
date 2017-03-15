@@ -1,17 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Routes from './js/routing/routes'
+import routes from './js/routes'
 import App from './js/app'
 import './style/main.css'
-
+import { Router, browserHistory } from 'react-router'
 
 ReactDOM.render(
-  <Routes/>,
+  <Router history={browserHistory}>
+    { routes }
+  </Router>,
   document.getElementById('root')
 )
 
 if (module.hot) {
-  module.hot.accept(Routes, () => {
-    render(<Routes />, document.getElementById('root'));
+  module.hot.accept(routes, () => {
+    render(
+    <Router history={browserHistory}>
+      { routes }
+    </Router>, 
+    document.getElementById('root'));
   })
 }
