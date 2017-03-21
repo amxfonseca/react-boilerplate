@@ -17,7 +17,7 @@ if (module.hot) {
     render(
     <Router history={browserHistory}>
       { routes }
-    </Router>, 
+    </Router>,
     document.getElementById('root'));
   })
 }

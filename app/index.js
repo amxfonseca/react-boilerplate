@@ -21,9 +21,8 @@ app.use(express.static(path.join(__dirname, 'static')))
 
 app.get('*', (request, response) => {
   match({ routes, location: request.url }, (err, redirectLocation, renderProps) => {
-    console.log(err, redirectLocation) 
-    response.render('index', { root: renderToString(renderApp(renderProps)) })
     
+    response.render('index', { root: renderToString(renderApp(renderProps)) })
   })
 })
 
